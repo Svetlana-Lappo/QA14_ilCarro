@@ -31,7 +31,7 @@ public class TestBase {
     public boolean isElementPresent(By locator){
 
         try{
-            wd.findElements(locator);
+            wd.findElement(locator);
             return true;
         }catch (NoSuchElementException ex){
             return false;
