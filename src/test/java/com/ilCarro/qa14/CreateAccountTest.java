@@ -11,8 +11,8 @@ public class CreateAccountTest extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition(){
-        if(!isElementPresent(By.cssSelector("[href='/signup']"))){      // sign up not present
-            wd.findElement(By.xpath("//a[contains(.,'logOut')]")).click(); //click on logout button
+        if(!isSignUpFormPresent()){      // sign up not present
+            logout();
         }
     }
 
@@ -23,27 +23,26 @@ public class CreateAccountTest extends TestBase {
         //email
         //password
         //check_policy
-        wd.findElement(By.cssSelector("[href='/signup']")).click();
-        Assert.assertTrue(isElementPresent(By.cssSelector("form.signup__fields")));
-        wd.findElement(By.cssSelector("#first_name")).click();
-        wd.findElement(By.cssSelector("#first_name")).clear();
-        wd.findElement(By.cssSelector("#first_name")).sendKeys("SS1");
-        wd.findElement(By.cssSelector("#second_name")).click();
-        wd.findElement(By.cssSelector("#second_name")).clear();
-        wd.findElement(By.cssSelector("#second_name")).sendKeys("LL1");
-        wd.findElement(By.cssSelector("#email")).click();
-        wd.findElement(By.cssSelector("#email")).clear();
-        wd.findElement(By.cssSelector("#email")).sendKeys("ss1@gmail.com");
-        wd.findElement(By.cssSelector("#password")).click();
-        wd.findElement(By.cssSelector("#password")).clear();
-        wd.findElement(By.cssSelector("#password")).sendKeys("SL1234567");
-        wd.findElement(By.cssSelector("#check_policy")).click();
-    }
-    //click on SignUp Button
-    //fill registration form
-    //click Submit button
-    //check login form displayed
+        click(By.cssSelector("[href='/signup']"));
+        isLoginFormPresent();
 
+        type(By.cssSelector("#first_name"), "Sara1");
+
+        type(By.cssSelector("#second_name"), "Lid1");
+
+        type(By.cssSelector("#email"), "saralid11@gmail.com");
+
+        type(By.cssSelector("#password"), "Sl12345689");
+
+        click(By.cssSelector("#check_policy"));
+        submit();
+        Assert.assertTrue(isElementPresent(By.xpath("//div[@class='signup__registration_title ']/h2[contains(.,'Log in')]")));
+        
+        //click on SignUp Button
+        //fill registration form
+        //click Submit button
+        //check login form displayed
+    }
 
 
 }
