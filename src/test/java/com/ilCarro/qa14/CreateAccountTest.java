@@ -11,37 +11,30 @@ public class CreateAccountTest extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition(){
-        if(!isSignUpFormPresent()){      // sign up not present
-            logout();
-        }
+        super.ensurePrecondition();
     }
 
     @Test
     public void signUpTest(){
-        //first_name
-        //second_name
-        //email
-        //password
-        //check_policy
-        click(By.cssSelector("[href='/signup']"));
+
+        //click on SignUp Tab on the Header
+        clickOnSignUpTab();
+        isSignUpFormPresent();
+
+        //fill registration form
+        fillRegistrationForm(new User()
+                .withFirstName("Sara13")
+                .withSecondName("Lid13")
+                .withEmail("saralid13@gmail.com")
+                .withPassword("Sl12345687"));
+
+        clickCheckPolicy();
+        //click Submit button
+        submit();
+        //check login form displayed
         isLoginFormPresent();
 
-        type(By.cssSelector("#first_name"), "Sara1");
 
-        type(By.cssSelector("#second_name"), "Lid1");
-
-        type(By.cssSelector("#email"), "saralid11@gmail.com");
-
-        type(By.cssSelector("#password"), "Sl12345689");
-
-        click(By.cssSelector("#check_policy"));
-        submit();
-        Assert.assertTrue(isElementPresent(By.xpath("//div[@class='signup__registration_title ']/h2[contains(.,'Log in')]")));
-        
-        //click on SignUp Button
-        //fill registration form
-        //click Submit button
-        //check login form displayed
     }
 
 

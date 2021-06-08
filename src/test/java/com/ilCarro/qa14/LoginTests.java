@@ -7,29 +7,31 @@ import org.testng.annotations.Test;
 
 public class LoginTests extends TestBase{
 
-    @BeforeMethod
-
-    public void ensurePrecondition(){
-        //go to login
-        //if user logged in, click logout, go to login
-        if(!isSignUpFormPresent()){
-            logout();
-        }
-    }
-
-
 
     @Test
     public void loginRegisteredUserPositiveTest(){
         //go to login page
-        click(By.xpath("//ul[@class='header__nav desktop']/li/a[@href='/login']"));
+        clickOnLoginTab();
         //fill login form
-        type(By.cssSelector("[name='email']"),"saralid11@gmail.com");
-        type(By.name("password"),"Sl12345689");
+        fillLoginForm(new User().withEmail("saralid11@gmail.com").withPassword("Sl12345689"));
         //submit login
         submit();
-        isLogoutTabPresent();
         //assert user logged in
+        isLogoutTabPresent();
+
+
+
+    }
+    @Test
+    public void loginRegisteredUserWithWrongPasswordNegativeTest(){
+        //go to login page
+        clickOnLoginTab();
+        //fill login form
+        fillLoginForm(new User().withEmail("saralid11@gmail.com").withPassword("sl12345689"));
+        //submit login
+        submit();
+        //assert user not logged in
+        isLogoutTabNotPresent();
 
 
     }

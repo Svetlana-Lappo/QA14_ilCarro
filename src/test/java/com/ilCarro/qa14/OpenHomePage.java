@@ -15,15 +15,13 @@ public class OpenHomePage extends TestBase {
     @Test
 
     public void homePageTest(){
-        //System.out.println("FindCarForm: " + isElementPresent());
-        System.out.println("FindCarForm: " + isElementPresent(By.cssSelector(".Main_mainpage__find_your_car__AHLkw")));
+        System.out.println("FindCarForm: "+ isFindCarFormPresent());
     }
 
 
-
-    public boolean isFindCarFormPresent1(){
-
-        return wd.findElements(By.cssSelector(".Main_mainpage__find_your_car__AHLkw")).size()>0;
-    }
+//    public boolean isFindCarFormPresent1(){
+//
+//        return wd.findElements(By.cssSelector(".Main_mainpage__find_your_car__AHLkw")).size()>0;
+//    }
 
 }

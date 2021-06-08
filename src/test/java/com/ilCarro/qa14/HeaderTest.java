@@ -9,9 +9,21 @@ public class HeaderTest extends TestBase{
 
     @BeforeMethod
     public void ensurePrecondition(){
-        if(!isSignUpFormPresent()){      // sign up not present
-            click(By.xpath("//a[contains(.,'logOut')]"));
-        }
+        super.ensurePrecondition();
+    }
+
+    @Test
+    public void headerTabsTest(){
+
+        clickOnSearchTab();
+        clickOnLogoTab();
+        clickOnAddCarTab();
+        clickOnLogoTab();
+        clickOnLoginTab();
+        clickOnLogoTab();
+        clickOnTermOfUseTab();
+        wd.navigate().back();
+
     }
 
 //    @Test
@@ -36,41 +48,13 @@ public class HeaderTest extends TestBase{
 //
 //    }
 
-    @Test
-    public void logInTabTest(){
-        click(By.xpath("//ul[@class='header__nav desktop']/li/a[@href='/login']"));
-        Assert.assertTrue(isElementPresent(By.cssSelector(".signup__fields")));
-    }
-
-    @Test
-    public void headerTabsTest(){
-
-        click(By.xpath("//ul[@class='header__nav desktop']/li/a[@href='/search']"));
-        if(isElementPresent(By.cssSelector(".search-sidebar__inner"))){
-            System.out.println("Search was opened");
-        }
-        //wd.navigate().back();
-        click(By.xpath("//section[@class='container header']/a[@class='active']"));
-        click(By.xpath("//ul[@class='header__nav desktop']/li/a[@href='/car']"));
-        if(isElementPresent(By.tagName("h3"))){
-            System.out.println("Let the car work was opened");
-        }
-        //wd.navigate().back();
-        click(By.xpath("//section[@class='container header']/a[@class='active']"));
-        click(By.xpath("//ul[@class='header__nav desktop']/li/a[@href='/login']"));
-        if(isElementPresent(By.cssSelector(".signup__fields"))){
-            System.out.println("Login was opened");
-        }
-        //wd.navigate().back();
-        click(By.xpath("//section[@class='container header']/a[@class='active']"));
-        click(By.xpath("//ul[@class='header__nav desktop']/li/a[@href='/terms']"));
-        if(isElementPresent(By.xpath("//div[@class='container-full']/h1[contains(.,'Terms')]"))){
-            System.out.println("Terms of use was opened");
-        }
-        wd.navigate().back();
+//    @Test
+//    public void logInTabTest(){
+//        click(By.xpath("//ul[@class='header__nav desktop']/li/a[@href='/login']"));
+//        Assert.assertTrue(isElementPresent(By.cssSelector(".signup__fields")));
+//    }
 
 
-    }
 
 
 }
