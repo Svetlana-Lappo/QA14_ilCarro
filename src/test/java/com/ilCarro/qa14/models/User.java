@@ -1,4 +1,4 @@
-package com.ilCarro.qa14;
+package com.ilCarro.qa14.models;
 
 public class User {
     private  String firstName;

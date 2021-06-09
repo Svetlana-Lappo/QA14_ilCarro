@@ -1,28 +1,23 @@
-package com.ilCarro.qa14;
+package com.ilCarro.qa14.tests;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import com.ilCarro.qa14.fw.HelperBase;
 import org.testng.annotations.Test;
 
-public class HeaderTest extends TestBase{
+public class HeaderTest extends TestBase {
 
-    @BeforeMethod
-    public void ensurePrecondition(){
-        super.ensurePrecondition();
-    }
+
 
     @Test
     public void headerTabsTest(){
 
-        clickOnSearchTab();
-        clickOnLogoTab();
-        clickOnAddCarTab();
-        clickOnLogoTab();
-        clickOnLoginTab();
-        clickOnLogoTab();
-        clickOnTermOfUseTab();
-        wd.navigate().back();
+        app.header().clickOnSearchTab();
+        app.header().clickOnLogoTab();
+        app.car().clickOnAddCarTab();
+        app.header().clickOnLogoTab();
+        app.user().clickOnLoginTab();
+        app.header().clickOnLogoTab();
+        app.header().clickOnTermOfUseTab();
+        HelperBase.wd.navigate().back();
 
     }
 
