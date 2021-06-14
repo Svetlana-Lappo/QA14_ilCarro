@@ -1,0 +1,9 @@
+11:55:23.367 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start test homePageTest
+11:55:23.449 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Stop test homePageTest
+11:55:23.449 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - =============================
+11:55:23.455 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start test headerTabsTest
+11:55:25.673 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Stop test headerTabsTest
+11:55:25.674 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - =============================
+11:55:25.679 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start test addCarTest
+11:55:50.885 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Stop test addCarTest
+11:55:50.886 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - =============================

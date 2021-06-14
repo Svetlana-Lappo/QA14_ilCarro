@@ -24,7 +24,7 @@ public class CreateAccountTest extends TestBase {
         app.user().fillRegistrationForm(new User()
                 .withFirstName("Sara14")
                 .withSecondName("Lid14")
-                .withEmail("saralid14@gmail.com")
+                .withEmail("saralid" + System.currentTimeMillis() + "@gmail.com")
                 .withPassword("Sl12345686"));
 
         app.user().clickCheckPolicy();
