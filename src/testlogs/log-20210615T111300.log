@@ -1,0 +1,12 @@
+11:13:06.192 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test addCarFromCSVTest with data: [Car{country='Russian', address='Slepneva', distance='300'}]
+11:13:30.654 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test addCarFromCSVTest
+11:13:30.654 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================
+11:13:30.656 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test addCarFromCSVTest with data: [Car{country='Germany', address='Marktplatz', distance='800'}]
+11:13:33.855 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test addCarFromCSVTest
+11:13:33.856 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================
+11:13:33.858 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test addCarFromCSVTest with data: [Car{country='Germany', address='Marktplatz', distance='10'}]
+11:13:36.904 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test addCarFromCSVTest
+11:13:36.905 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================
+11:13:36.907 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test addCarFromCSVTest with data: [Car{country='Germany', address='Marktplatz', distance='1000'}]
+11:13:40.021 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test addCarFromCSVTest
+11:13:40.022 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================

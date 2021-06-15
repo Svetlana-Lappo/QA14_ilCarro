@@ -27,4 +27,15 @@ public class CreateCarTest extends TestBase {
         app.car().clickOnButtonSubmitOnCarAddPage();
     }
 
+    @Test(dataProvider = "validCarFromCSV", dataProviderClass = DataProviders.class)
+    public void addCarFromCSVTest(Car car) throws InterruptedException{
+        app.car().pause();
+        app.car().clickOnAddCarTab();
+
+        app.car().fillCarForm(car);
+
+
+        app.car().clickOnButtonSubmitOnCarAddPage();
+    }
+
 }

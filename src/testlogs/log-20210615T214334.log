@@ -1,0 +1,8 @@
+21:43:39.638 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test loginRegisteredUserWithWrongPasswordDataProviderFromCSVNegativeTest with data: [User{firstName='Joe', secondName='Bon', email='joe.bon@gmail.com', password='Jb12345678'}]
+21:43:41.962 [main] ERROR com.ilCarro.qa14.tests.TestBase - FAILED: Test method loginRegisteredUserWithWrongPasswordDataProviderFromCSVNegativeTest
+Screenshot: C:\Users\HP\Desktop\QA\GitHub\QA14_ilCarro\src\test\screenshots\screenshot1623786221933.png
+21:43:41.963 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================
+21:43:41.968 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test loginRegisteredUserWithWrongPasswordDataProviderFromCSVNegativeTest with data: [User{firstName='Joe', secondName='Bon', email='joe.bon1@gmail.com', password='Jb12345679'}]
+21:43:43.545 [main] ERROR com.ilCarro.qa14.tests.TestBase - FAILED: Test method loginRegisteredUserWithWrongPasswordDataProviderFromCSVNegativeTest
+Screenshot: C:\Users\HP\Desktop\QA\GitHub\QA14_ilCarro\src\test\screenshots\screenshot1623786223537.png
+21:43:43.546 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================

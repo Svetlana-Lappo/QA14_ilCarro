@@ -1,0 +1,8 @@
+21:31:47.688 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test loginRegisteredUserDataProviderFromCSVPositiveTest with data: [User{firstName='Joe', secondName='Bon', email='joe.bon@gmail.com', password='Jb12345678'}]
+21:31:49.431 [main] INFO  com.ilCarro.qa14.tests.TestBase - Logout Tab is present. Actual result: true. Expected result: true.
+21:31:49.465 [main] INFO  com.ilCarro.qa14.tests.TestBase - PASSED: test method loginRegisteredUserDataProviderFromCSVPositiveTest
+21:31:49.465 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================
+21:31:49.467 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test loginRegisteredUserDataProviderFromCSVPositiveTest with data: [User{firstName='Joe', secondName='Bon', email='joe.bon1@gmail.com', password='Jb12345679'}]
+21:31:50.646 [main] INFO  com.ilCarro.qa14.tests.TestBase - Logout Tab is present. Actual result: true. Expected result: true.
+21:31:50.667 [main] INFO  com.ilCarro.qa14.tests.TestBase - PASSED: test method loginRegisteredUserDataProviderFromCSVPositiveTest
+21:31:50.667 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================

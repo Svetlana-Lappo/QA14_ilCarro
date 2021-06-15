@@ -31,4 +31,13 @@ public class Car {
     public String getDistance() {
         return distance;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "country='" + country + '\'' +
+                ", address='" + address + '\'' +
+                ", distance='" + distance + '\'' +
+                '}';
+    }
 }

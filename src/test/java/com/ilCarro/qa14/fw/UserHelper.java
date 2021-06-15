@@ -62,6 +62,10 @@ public class UserHelper extends HelperBase {
         Assert.assertTrue(isElementPresent1(By.xpath("//div[@class='signup__registration_title ']/h2[contains(.,'Log in')]")));
     }
 
+    public boolean isLogInFormPresent(){
+        return isElementPresent1(By.xpath("//div[@class='signup__registration_title ']/h2[contains(.,'Log in')]"));
+    }
+
     public void clickCheckPolicy() {
         click(By.cssSelector("#check_policy"));
     }
@@ -76,6 +80,10 @@ public class UserHelper extends HelperBase {
     public void isLogoutTabNotPresent() {
         Assert.assertFalse(isElementPresent(By.xpath("//a[contains(.,'logOut')]")));
     }
+    public boolean isLogOutTabPresent() {
+        return isElementPresent(By.xpath("//a[contains(.,'logOut')]"));
+    }
+
 
     @BeforeMethod
 

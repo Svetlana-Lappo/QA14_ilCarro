@@ -1,0 +1,12 @@
+10:52:21.033 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderFromCSVTest with data: [User{firstName='Joe', secondName='Bon', email='joe.bon4@gmail.com', password='Jb12345678'}]
+10:52:43.014 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderFromCSVTest
+10:52:43.015 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================
+10:52:43.016 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderFromCSVTest with data: [User{firstName='Joe', secondName='Bon', email='joe.bon5@gmail.com', password='Jb12345679'}]
+10:53:04.396 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderFromCSVTest
+10:53:04.397 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================
+10:53:04.399 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderFromCSVTest with data: [User{firstName='Joe', secondName='Bon', email='joe.bon6@gmail.com', password='Jb12345680'}]
+10:53:25.688 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderFromCSVTest
+10:53:25.689 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================
+10:53:25.692 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderFromCSVTest with data: [User{firstName='Joe', secondName='Bon', email='joe.bon7@gmail.com', password='Jb12345681'}]
+10:53:47.012 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderFromCSVTest
+10:53:47.013 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================
