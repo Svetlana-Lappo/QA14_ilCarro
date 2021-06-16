@@ -1,10 +1,7 @@
 package com.ilCarro.qa14.fw;
 
 import com.google.common.io.Files;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.testng.annotations.BeforeMethod;
 
 import java.io.File;
@@ -39,8 +36,9 @@ public class HelperBase {
     public void type(By locator, String text) {
         if(text!=null) {
             click(locator);
-            wd.findElement(locator).clear();
-            wd.findElement(locator).sendKeys(text);
+            wd.findElement(locator).sendKeys(Keys.chord(Keys.CONTROL,"a") + Keys.DELETE +text);
+//            wd.findElement(locator).clear();
+//            wd.findElement(locator).sendKeys(text);
         }
     }
 

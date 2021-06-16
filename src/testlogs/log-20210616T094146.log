@@ -1,0 +1,16 @@
+09:41:52.128 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test loginRegisteredUserPositiveTest with data: []
+09:41:52.152 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.xpath: //ul[@class='header__nav desktop']/li/a[@href='/login']
+09:41:52.201 [main] INFO  com.ilCarro.qa14.tests.TestBase - By.xpath: //ul[@class='header__nav desktop']/li/a[@href='/login']found. 
+09:41:52.470 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: [name='email123']
+09:42:12.527 [main] ERROR com.ilCarro.qa14.tests.TestBase - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[name='email123']"}
+  (Session info: chrome=91.0.4472.101)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-66I6I7I', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50813}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ba7591f8d1a56ed799ead4877f320b59
+*** Element info: {Using=css selector, value=[name='email123']}
+09:42:13.092 [main] ERROR com.ilCarro.qa14.tests.TestBase - FAILED: Test method loginRegisteredUserPositiveTest
+Screenshot: C:\Users\HP\Desktop\QA\GitHub\QA14_ilCarro\src\test\screenshots\screenshot1623829333066.png
+09:42:13.092 [main] INFO  com.ilCarro.qa14.tests.TestBase - =============================

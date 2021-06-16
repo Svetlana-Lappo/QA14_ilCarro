@@ -11,8 +11,8 @@ public class LoginTests extends TestBase {
         //go to login page
         app.user().clickOnLoginTab();
         //fill login form
-       // app.user().fillLoginForm(new User().withEmail("saralid11@gmail.com").withPassword("Sl12345689"));
-        app.user().fillLoginForm(new User().withEmail("saralid11@gmail.com").withPassword("Sl12345681"));
+        app.user().fillLoginForm(new User().withEmail("saralid11@gmail.com").withPassword("Sl12345689"));
+       // app.user().fillLoginForm(new User().withEmail("saralid11@gmail.com").withPassword("Sl12345681"));
         //submit login
         app.user().submit();
         //assert user logged in
@@ -72,7 +72,7 @@ public class LoginTests extends TestBase {
 
         //assert user not logged in
         app.user().isLogoutTabNotPresent();
-        app.user().refresh();
+
 
     }
 
