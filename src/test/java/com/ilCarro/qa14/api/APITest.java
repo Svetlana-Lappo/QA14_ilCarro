@@ -48,7 +48,7 @@ public class APITest {
    @Test
     public void postNewUserRegistrationTest() throws IOException {
         String response = Request.Post(baseURL + "/registration")
-                .addHeader("Authorization", "dHdAZ21haWwuY29tOlNsMTIzNDU2NA==")
+                .addHeader("Authorization", "dHNAZ21haWwuY29tOlRzMTIzNDU2Nzg=")
                 .bodyString("{\n" +
                         "  \"first_name\": \"Test\",\n" +
                         "  \"second_name\": \"Tester\"\n" +
@@ -57,32 +57,22 @@ public class APITest {
        System.out.println(response);
    }
 
-   @Test
-    public void deleteUserTest() throws IOException {
 
-       String response = deleteDataUser("Authorization", "dHdAZ21haWwuY29tOlNsMTIzNDU2NA==");
-       System.out.println(response);
-   }
 
     @Test
-    public void deleteUserNegativeTest() throws IOException {
+    public void deleteUser() throws IOException {
 
-         deleteDataUserStatusCode("Authorization", "dHdAZ21haWwuY29tOlNsMTIzNDU2NA==");
+         deleteDataUser("Authorization", "dHNAZ21haWwuY29tOlRzMTIzNDU2Nzg=");
 
     }
 
-    private String deleteDataUser(String key, String value) throws IOException {
-        String response = Request.Delete(baseURL + "/user")
-                .addHeader(key, value)
-                .execute().returnContent().asString();
-        return response;
-    }
 
-    private int deleteDataUserStatusCode(String key, String value) throws IOException {
+
+    private int deleteDataUser(String key, String value) throws IOException {
         int statusCode = Request.Delete(baseURL + "/user")
                 .addHeader(key, value)
                 .execute().returnResponse().getStatusLine().getStatusCode();
-        Assert.assertEquals(statusCode,404);
+        Assert.assertEquals(statusCode,200);
         return statusCode;
     }
 }

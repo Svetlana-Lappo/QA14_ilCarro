@@ -7,6 +7,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import com.google.gson.JsonObject;
 
 public class RestAssuredTest {
 
@@ -17,10 +18,10 @@ public class RestAssuredTest {
 
         Response response = httpRequest
                 .given().contentType(ContentType.JSON)
-                .given().header("Authorization", "dHczQGdtYWlsLmNvbTpTbDEyMzQ1NjQ=")
+                .given().header("Authorization", "dHMyQGdtYWlsLmNvbTpUczEyMzQ1Njc4")
                 .request().body("{\n" +
-                        "  \"first_name\": \"TesterS\",\n" +
-                        "  \"second_name\": \"TesterM\"\n" +
+                        "  \"first_name\": \"TesterM\",\n" +
+                        "  \"second_name\": \"TesterMS\"\n" +
                         "}")
                 .when().post("https://java-3-ilcarro-team-b.herokuapp.com/registration");
 
@@ -29,9 +30,13 @@ public class RestAssuredTest {
 
         int statusCode = response.getStatusCode();
         System.out.println(statusCode);
-        JsonElement parsed = new JsonParser().parse(responseBody);
-        String fName = parsed.getAsJsonObject().get("first_name").toString();
-        System.out.println(fName);
+        //old variant
+//        JsonElement parsed = new JsonParser().parse(responseBody);
+//        String fName = parsed.getAsJsonObject().get("first_name").toString();
+
+        JsonObject fName = JsonParser.parseString(responseBody).getAsJsonObject();
+        JsonElement name = fName.get("first_name");
+        System.out.println(name);
 
         Assert.assertEquals(statusCode,200,"Bug:status code is coming different");
 
