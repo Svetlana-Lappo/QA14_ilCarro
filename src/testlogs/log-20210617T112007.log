@@ -1,0 +1,57 @@
+11:20:20.371 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start test loginRegisteredUserPositiveTest with data: []
+11:20:20.474 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.xpath: //ul[@class='header__nav desktop']/li/a[@href='/login']
+11:20:20.572 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.xpath: //ul[@class='header__nav desktop']/li/a[@href='/login']found. 
+11:20:21.033 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: [name='email']
+11:20:21.072 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: [name='email']found. 
+11:20:21.338 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: [name='email']
+11:20:21.357 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: [name='email']found. 
+11:20:21.463 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.name: password
+11:20:21.515 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.name: passwordfound. 
+11:20:21.795 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.name: password
+11:20:21.814 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.name: passwordfound. 
+11:20:21.847 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: [type='submit']
+11:20:21.876 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: [type='submit']found. 
+11:20:22.618 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.xpath: //a[contains(.,'logOut')]
+11:20:42.658 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.xpath: //a[contains(.,'logOut')]found. 
+11:20:43.198 [Test worker] ERROR com.ilCarro.qa14.tests.TestBase - FAILED: Test method loginRegisteredUserPositiveTest
+Screenshot: C:\Users\HP\Desktop\QA\GitHub\QA14_ilCarro\src\test\screenshots\screenshot1623921643161.png
+11:20:43.198 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - =============================
+11:20:43.208 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpTest with data: []
+11:20:43.210 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: [href='/signup']
+11:20:43.231 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: [href='/signup']found. 
+11:20:43.233 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: [href='/signup']
+11:20:43.245 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: [href='/signup']found. 
+11:20:43.549 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.xpath: //div[@class='signup__right_block']//form[@class='signup__fields']
+11:20:43.579 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.xpath: //div[@class='signup__right_block']//form[@class='signup__fields']found. 
+11:20:43.582 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: #first_name
+11:20:43.601 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: #first_namefound. 
+11:20:45.385 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: #first_name
+11:20:45.481 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: #first_namefound. 
+11:20:45.506 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: #second_name
+11:20:45.525 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: #second_namefound. 
+11:20:46.267 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: #second_name
+11:20:46.287 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: #second_namefound. 
+11:20:46.312 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: #email
+11:20:46.333 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: #emailfound. 
+11:20:46.771 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: #email
+11:20:46.792 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: #emailfound. 
+11:20:46.855 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: #password
+11:20:46.863 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: #passwordfound. 
+11:20:47.604 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: #password
+11:20:47.620 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: #passwordfound. 
+11:20:47.644 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: #check_policy
+11:20:47.650 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: #check_policyfound. 
+11:20:48.101 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.cssSelector: [type='submit']
+11:20:48.123 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - By.cssSelector: [type='submit']found. 
+11:20:48.849 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - Start search By.xpath: //div[@class='signup__registration_title ']/h2[contains(.,'Log in')]
+11:21:09.264 [Test worker] ERROR com.ilCarro.qa14.tests.TestBase - org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='signup__registration_title ']/h2[contains(.,'Log in')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-66I6I7I', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210415204500, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 22508, moz:profile: C:\Users\HP\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e86afffd-c36e-4241-afb8-f2cf371209b2
+*** Element info: {Using=xpath, value=//div[@class='signup__registration_title ']/h2[contains(.,'Log in')]}
+11:21:09.754 [Test worker] ERROR com.ilCarro.qa14.tests.TestBase - FAILED: Test method signUpTest
+Screenshot: C:\Users\HP\Desktop\QA\GitHub\QA14_ilCarro\src\test\screenshots\screenshot1623921669748.png
+11:21:09.756 [Test worker] INFO  com.ilCarro.qa14.tests.TestBase - =============================

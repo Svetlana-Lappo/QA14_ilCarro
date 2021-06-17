@@ -41,7 +41,7 @@ public class LoginTests extends TestBase {
 
     }
 
-    @Test(dataProvider = "validRegisteredUserFromCSV", dataProviderClass = DataProviders.class)
+    @Test(enabled = false,dataProvider = "validRegisteredUserFromCSV", dataProviderClass = DataProviders.class)
     public void loginRegisteredUserDataProviderFromCSVPositiveTest(User user){
         //go to login page
         app.user().clickOnLoginTab();
@@ -59,7 +59,7 @@ public class LoginTests extends TestBase {
 
     }
 
-    @Test(dataProvider = "invalidRegisteredUserFromCSV", dataProviderClass = DataProviders.class)
+    @Test(enabled = false,dataProvider = "invalidRegisteredUserFromCSV", dataProviderClass = DataProviders.class)
     public void loginRegisteredUserWithWrongPasswordDataProviderFromCSVNegativeTest(User user){
         //go to login page
         app.user().clickOnLoginTab();

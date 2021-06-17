@@ -17,7 +17,7 @@ public class APITest {
     public void loginRegisteredUserPositiveTest() throws IOException {
         String response = getAuthorizationUser(baseURL + "/user/login", "Authorization", "dHNzQGxsLmNvbTpUc3NsbDEyMzQ1");
 
-       // System.out.println(response);
+
 
         JsonElement parsed = new JsonParser().parse(response);
         JsonElement name = parsed.getAsJsonObject().get("first_name");

@@ -30,10 +30,10 @@ public class CreateAccountTest extends TestBase {
 
         //fill registration form
         app.user().fillRegistrationForm(new User()
-                .withFirstName("Sara14")
-                .withSecondName("Lid14")
+                .withFirstName("Sara17")
+                .withSecondName("Lid17")
                 .withEmail("saralid" + System.currentTimeMillis() + "@gmail.com")
-                .withPassword("Sl12345686"));
+                .withPassword("Sl12345676"));
 
         app.user().clickCheckPolicy();
 
@@ -46,7 +46,7 @@ public class CreateAccountTest extends TestBase {
 
     }
 
-    @Test(dataProvider = "validUser", dataProviderClass = DataProviders.class)
+    @Test(enabled = false,dataProvider = "validUser", dataProviderClass = DataProviders.class)
     public void signUpFromDataProviderTest(String fName,String sName,String email,String password){
 
         //click on SignUp Tab on the Header
@@ -73,7 +73,7 @@ public class CreateAccountTest extends TestBase {
 
     }
 
-    @Test(dataProvider = "validUserFromCSV", dataProviderClass = DataProviders.class)
+    @Test(enabled = false,dataProvider = "validUserFromCSV", dataProviderClass = DataProviders.class)
     public void signUpFromDataProviderFromCSVTest(User user){
 
         //click on SignUp Tab on the Header

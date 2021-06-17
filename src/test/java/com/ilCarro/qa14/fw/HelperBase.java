@@ -36,9 +36,9 @@ public class HelperBase {
     public void type(By locator, String text) {
         if(text!=null) {
             click(locator);
-            wd.findElement(locator).sendKeys(Keys.chord(Keys.CONTROL,"a") + Keys.DELETE +text);
-//            wd.findElement(locator).clear();
-//            wd.findElement(locator).sendKeys(text);
+//            wd.findElement(locator).sendKeys(Keys.chord(Keys.CONTROL,"a") + Keys.DELETE +text);
+           wd.findElement(locator).clear();
+           wd.findElement(locator).sendKeys(text);
         }
     }
 

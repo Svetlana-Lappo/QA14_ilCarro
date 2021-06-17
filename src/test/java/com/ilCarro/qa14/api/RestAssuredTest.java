@@ -18,10 +18,10 @@ public class RestAssuredTest {
 
         Response response = httpRequest
                 .given().contentType(ContentType.JSON)
-                .given().header("Authorization", "dHMyQGdtYWlsLmNvbTpUczEyMzQ1Njc4")
-                .request().body("{\n" +
-                        "  \"first_name\": \"TesterM\",\n" +
-                        "  \"second_name\": \"TesterMS\"\n" +
+                .given().header("Authorization", "c3dAZ21haWwuY29tOlR3MTIzNDU2Nzg=")
+                .given().body("{\n" +
+                        "  \"first_name\": \"Test\",\n" +
+                        "  \"second_name\": \"Test\"\n" +
                         "}")
                 .when().post("https://java-3-ilcarro-team-b.herokuapp.com/registration");
 
@@ -53,8 +53,6 @@ public class RestAssuredTest {
 
         int statusCode = response.getStatusCode();
         Assert.assertEquals(statusCode,200,"Bug: status code is coming different");
-
-
 
     }
 }

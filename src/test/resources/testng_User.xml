@@ -8,6 +8,9 @@
                     <exclude name=".*Negative.*" />
                 </methods>
             </class>
+            <class name="com.ilCarro.qa14.tests.CreateAccountTest"/>
+
+
 
         </classes>
     </test>
