@@ -66,6 +66,8 @@ public class CreateAccountTest extends TestBase {
         logger.info("Login form present. Actual result: " + app.user().isLogInFormPresent()
                 + ". Expected result: true.");
 
+        // changes for jenkis
+
         //check login form displayed
         app.user().isLoginFormPresent();
 
